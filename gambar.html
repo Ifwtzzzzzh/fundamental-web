@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menggambar</title>
+  </head>
+  <script>
+    function f1() {
+      var canvas = document.getElementById("kotak");
+      context = canvas.getContext("2d");
+      context.fillStyle = "rgb(255,124,0)";
+      context.fillRect(10, 20, 450, 500);
+    }
+  </script>
+  <body onload="f1();">
+    <canvas id="kotak" height="250" width="250"></canvas>
+  </body>
+</html>

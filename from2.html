@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan untuk Forms dan Input</title>
+  </head>
+  <body>
+    <div
+      id="form-kontak"
+      style="font-family: Arial Narrow, Nimbus Sans, sans-serif"
+    >
+      <form action="POST" id="kontak" action="#">
+        <fieldset>
+          <label for="nama_label">Nama: </label>
+          <input type="text" name="nama_input" />
+        </fieldset>
+        <fieldset>
+          <label for="email_label">Email: </label>
+          <input type="email" name="email_input" />
+        </fieldset>
+        <fieldset>
+          <label for="email_label">Telephone: </label>
+          <input type="number" name="telp_input" required />
+        </fieldset>
+        <fieldset>
+          <label for="qna_label">Pertanyaan: </label>
+          <textarea name="qna_input" id="qna_input"></textarea>
+        </fieldset>
+        <button>Kirim</button>
+      </form>
+    </div>
+  </body>
+</html>

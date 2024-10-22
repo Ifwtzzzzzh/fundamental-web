@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Sederhana</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 50px;
+      }
+
+      .calc {
+        width: 300px;
+        margin: auto;
+        padding: 10px;
+        border: 1px solid #000;
+        border-radius: 5px;
+      }
+
+      input[type="text"] {
+        width: 90%;
+        margin: 5px 0;
+        padding: 10px;
+        text-align: right;
+      }
+
+      .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+
+      .buttons button {
+        padding: 15px;
+        font-size: 18px;
+      }
+    </style>
+    <script>
+      function hitung(value) {
+        document.getElementById("hasil").value += value;
+      }
+
+      function hapus() {
+        document.getElementById("hasil").value = "";
+      }
+
+      function deleteChar() {
+        var currval = document.getElementById("hasil").value;
+        document.getElementById("hasil").value = currval.slice(0, -1);
+      }
+
+      function hitungAll() {
+        try {
+          var hasil = eval(document.getElementById("hasil").value);
+          document.getElementById("hasil").value = hasil;
+        } catch (error) {
+          document.getElementById("hasil").value = "error bos";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="calc">
+      <input type="text" id="hasil" disabled />
+      <div class="buttons">
+        <button onclick="hapus()">C</button>
+        <button onclick="deleteChar()">Del</button>
+        <button onclick="hitung('/')">/</button>
+        <button onclick="hitung('*')">*</button>
+        <button onclick="hitung('7')">7</button>
+        <button onclick="hitung('8')">8</button>
+        <button onclick="hitung('9')">9</button>
+        <button onclick="hitung('-')">-</button>
+        <button onclick="hitung('4')">4</button>
+        <button onclick="hitung('5')">5</button>
+        <button onclick="hitung('6')">6</button>
+        <button onclick="hitung('+')">+</button>
+        <button onclick="hitung('1')">1</button>
+        <button onclick="hitung('2')">2</button>
+        <button onclick="hitung('3')">3</button>
+        <button onclick="hitungAll()">=</button>
+        <button onclick="hitung('0')" style="grid-column: span 2">0</button>
+        <button onclick="hitung('.')">.</button>
+      </div>
+    </div>
+  </body>
+</html>

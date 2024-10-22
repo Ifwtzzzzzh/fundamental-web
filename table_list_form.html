@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <caption>
+        Data Mahasiswa ITPLN
+      </caption>
+      <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Jurusan</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Yantonius</td>
+        <td>Teknik Sipil</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Karina</td>
+        <td rowspan="2">Teknik Sistem Listrik</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Ahmad Fauzi</td>
+      </tr>
+      <tr>
+        <td colspan="2">Banyaknya mahasiswa</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <!-- MEMBUAT LIST -->
+    <ul>
+      <li>Penghapus</li>
+      <li>Pensil</li>
+      <li>Bolpoin</li>
+    </ul>
+    <ol>
+      <li>Panaskan minyak</li>
+      <li>Tunggu sekitar 5 menit sampai minyak panas</li>
+      <li>Masukan pisang</li>
+      <li>Masak hingga kecoklatan</li>
+      <li>Angkat jika sudah coklat</li>
+    </ol>
+
+    <!-- MEMBUAT FORM -->
+    <fieldset>
+      <form action="">
+        <p>Nama</p>
+        <input
+          type="text"
+          maxlength="200"
+          placeholder="Isi nama lengkap anda"
+          required
+        />
+        <p>Email</p>
+        <input type="email" placeholder="Isi email anda" />
+        <label for="pw">Password</label>
+        <input type="password" id="pw" />
+        <p>Jenis Kelamin</p>
+        <input type="radio" name="jk" />Laki-Laki
+        <input type="radio" name="jk" />Perempuan
+        <p>Tanggal Lahir</p>
+        <input type="date" />
+        <p>No Telephon</p>
+        <input type="tel" />
+        <p>Hobby</p>
+        <input type="checkbox" />Berenang <input type="checkbox" />Bersepeda
+        <p>Bukti Pembayaran</p>
+        <input type="file" multiple />
+        <button type="submit">Kirim</button>
+      </form>
+    </fieldset>
+  </body>
+</html>

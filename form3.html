@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="POST">
+      <fieldset>
+        <label for="name_label">Nama Pemesan: </label>
+        <input type="text" name="name_label" />
+      </fieldset>
+      <fieldset>
+        <label for="nama_label">Alamat Pengiriman: </label>
+        <textarea name="address" id="addres"></textarea>
+      </fieldset>
+      <fieldset>
+        <label for="number_label">Nomor Telephon: </label>
+        <input type="number" name="number_input" />
+      </fieldset>
+      <fieldset>
+        <label for="date_rent_label">Tanggal Sewa: </label>
+        <input type="date" name="nama_input" />
+      </fieldset>
+      <fieldset>
+        <label for="transport_label">Jenis Kendaraan: </label>
+        <select name="transport" id="transport">
+          <option value="mobil">Mobil</option>
+          <option value="motor">Motor</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="model_label">Model Kendaraan: </label>
+        <input type="text" name="model_input" />
+      </fieldset>
+      <fieldset>
+        <label for="plat_label">Nomer Plat Kendaraan: </label>
+        <input type="text" name="plat_input" />
+      </fieldset>
+      <fieldset>
+        <label for="insurance_label">Asuransi Kendaraan: </label>
+        <select name="insurance" id="insurance">
+          <option value="ya">ya</option>
+          <option value="tidak">tidak</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="note_label">Catatan Pengiriman: </label>
+        <textarea name="note" id="note_label"></textarea>
+      </fieldset>
+      <button>Kirim</button>
+    </form>
+  </body>
+</html>

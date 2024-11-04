@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Captcha</title>
+    <link rel="stylesheet" href="/assets/bootstrap-5.2.2-dist/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>Captcha Generator</header>
+      <div class="input-field">
+        <h1 id="captcha-display">Captcha Generator</h1>
+        <button class="refresh-button" onclick="generateCaptcha()">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+      </div>
+      <div class="input-field captcha-input">
+        <input
+          type="text"
+          name=""
+          id="captcha-input"
+          placeholder="Masukan Captcha"
+        />
+      </div>
+      <p class="message" id="result-message"></p>
+      <div class="input-field button disabled"></div>
+      <button class="input-field submit" onclick="validateCaptcha()">
+        Kirim
+      </button>
+    </div>
+    <script src="/assets/bootstrap-5.2.2-dist/js/captcha.js"></script>
+  </body>
+</html>
